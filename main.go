@@ -1,5 +1,13 @@
 package main
 
-func main()  {
-	println("Hello, another world and the last last test!")
+import (
+	"fmt"
+	"net/http"
+)
+
+func main() {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprint(w, "hello world!")
+	})
+	http.ListenAndServe(":8080", nil)
 }
