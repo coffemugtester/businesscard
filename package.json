@@ -1,26 +1,8 @@
 {
-  "name": "businesscard",
-  "version": "1.0.0",
-  "type": "module",
-  "private": true,
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
     "@playwright/test": "^1.56.1",
-    "eslint": "^9.15.0"
+    "@types/node": "^24.10.1",
+    "typescript-eslint": "^8.46.4"
   },
-  "scripts": {
-    "test": "playwright test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coffemugtester/businesscard.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/coffemugtester/businesscard/issues"
-  },
-  "homepage": "https://github.com/coffemugtester/businesscard#readme",
-  "description": ""
+  "scripts": {}
 }
