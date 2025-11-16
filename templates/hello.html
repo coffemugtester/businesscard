@@ -1,54 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            position: relative;
-            width: 482px;
-            height: 623px;
-            background-color: white;
-            overflow: hidden;
-        }
-        .gray-box {
-            position: absolute;
-            left: 113px;
-            top: 73px;
-            width: 255px;
-            height: 105px;
-            background-color: #d9d9d9;
-        }
-        .message {
-            position: absolute;
-            left: 113px;
-            top: 107px;
-            width: 255px;
-            height: 38px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 32px;
-            color: black;
-            line-height: normal;
-            font-style: normal;
-            margin: 0;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        position: relative;
+        width: 482px;
+        height: 623px;
+        background-color: white;
+        overflow: hidden;
+      }
+      .gray-box {
+        position: absolute;
+        left: 113px;
+        top: 73px;
+        width: 255px;
+        height: 105px;
+        background-color: #d9d9d9;
+      }
+      .message {
+        position: absolute;
+        left: 113px;
+        top: 107px;
+        width: 255px;
+        height: 38px;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 32px;
+        color: black;
+        line-height: normal;
+        font-style: normal;
+        margin: 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="gray-box"></div>
-        <p class="message">{{.Message}}</p>
+      <div class="gray-box"></div>
+      <p class="message">{{.Message}}</p>
     </div>
-</body>
+  </body>
 </html>
