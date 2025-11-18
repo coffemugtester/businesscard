@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-      rel="stylesheet"
-    />
     <style>
       body {
         margin: 0;
@@ -20,38 +16,69 @@
       }
       .container {
         position: relative;
-        width: 482px;
-        height: 623px;
+        width: 589px;
+        height: 274px;
         background-color: white;
-        overflow: hidden;
       }
-      .gray-box {
+      .avatar {
         position: absolute;
-        left: 113px;
-        top: 73px;
-        width: 255px;
-        height: 105px;
-        background-color: #d9d9d9;
+        left: 0;
+        top: 0;
+        width: 99px;
+        height: 99px;
       }
-      .message {
+      .avatar img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+      }
+      .name {
         position: absolute;
-        left: 113px;
-        top: 107px;
-        width: 255px;
-        height: 38px;
-        font-family: "JetBrains Mono", monospace;
-        font-size: 32px;
-        color: black;
-        line-height: normal;
+        left: 198px;
+        top: 15px;
+        font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 40px;
         font-style: normal;
+        line-height: normal;
+        color: #0a0a0a;
+        margin: 0;
+      }
+      .title {
+        position: absolute;
+        left: 198px;
+        top: 85px;
+        font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+        color: #0a0a0a;
+        margin: 0;
+      }
+      .location {
+        position: absolute;
+        left: 198px;
+        top: 135px;
+        font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        line-height: normal;
+        color: #0a0a0a;
         margin: 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="gray-box"></div>
-      <p class="message">{{.Message}}</p>
+      <div class="avatar">
+        <img alt="" src="http://localhost:3845/assets/c9786ef2d9e9fbc983edde4c0286077d63d58236.svg" />
+      </div>
+      <p class="name">Daniel Alfaro</p>
+      <p class="title">Full Stack Developer</p>
+      <p class="location">Germany</p>
     </div>
   </body>
 </html>
