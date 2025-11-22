@@ -4,78 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-
-      .container {
-        position: relative;
-        width: 589px;
-        height: 274px;
-        background-color: white;
-      }
-
-      .avatar {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 99px;
-        height: 99px;
-      }
-
-      .avatar img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        max-width: none;
-      }
-
-      .name {
-        position: absolute;
-        left: 198px;
-        top: 15px;
-        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-        font-weight: 500;
-        font-size: 40px;
-        font-style: normal;
-        line-height: normal;
-        color: #0a0a0a;
-        margin: 0;
-      }
-
-      .title {
-        position: absolute;
-        left: 198px;
-        top: 85px;
-        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        font-style: normal;
-        line-height: normal;
-        color: #0a0a0a;
-        margin: 0;
-      }
-
-      .location {
-        position: absolute;
-        left: 198px;
-        top: 135px;
-        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        font-style: normal;
-        line-height: normal;
-        color: #0a0a0a;
-        margin: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="/static/css/hello.css" />
   </head>
 
   <body>
@@ -83,9 +12,11 @@
       <div class="avatar">
         <img alt="" src="/static/img/photo.svg" />
       </div>
-      <p class="name">Daniel Alfaro</p>
-      <p class="title">Full Stack Developer</p>
-      <p class="location">Germany</p>
+      <div class="info">
+        <p class="name">Daniel Alfaro</p>
+        <p class="title">Full Stack Developer</p>
+        <p class="location">in Germany</p>
+      </div>
     </div>
   </body>
 </html>
