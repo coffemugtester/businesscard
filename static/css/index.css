@@ -1,8 +1,12 @@
-/* test */
+:root {
+  --bg: white;
+  --fg: black;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: var(--bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +18,9 @@ body {
   grid-template-columns: 99px 1fr;
   gap: 20px;
   align-items: start;
-  background-color: white;
 }
 
 .avatar {
-  padding-top: 10px;
   width: 99px;
   height: 99px;
 }
@@ -29,6 +31,7 @@ body {
   height: 100%;
   max-width: none;
   border-radius: 50%;
+  border: 2px solid var(--fg);
 }
 
 .info {
@@ -43,7 +46,7 @@ body {
   font-size: 40px;
   font-style: normal;
   line-height: normal;
-  color: #0a0a0a;
+  color: var(--fg);
   margin: 0;
 }
 
@@ -51,9 +54,12 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
-  font-style: normal;
+  /* font-style: normal; */
+  font-family:
+    "SF Mono", "JetBrains Mono", "Fira Code", "Menlo", "Consolas",
+    "DejaVu Sans Mono", monospace;
   line-height: normal;
-  color: #0a0a0a;
+  color: var(--fg);
   margin: 0;
 }
 
@@ -63,6 +69,13 @@ body {
   font-size: 24px;
   font-style: normal;
   line-height: normal;
-  color: #0a0a0a;
+  color: var(--fg);
   margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: black;
+    --fg: white;
+  }
 }
