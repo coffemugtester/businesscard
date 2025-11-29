@@ -50,6 +50,19 @@ body {
   margin: 0;
 }
 
+.tz {
+  padding-left: 6px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-family:
+    "SF Mono", "JetBrains Mono", "Fira Code", "Menlo", "Consolas",
+    "DejaVu Sans Mono", monospace;
+  line-height: normal;
+  color: var(--fg);
+  margin: 0;
+}
+
 .title {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
   font-weight: 400;
