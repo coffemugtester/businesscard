@@ -39,6 +39,11 @@ body {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+.mobile-break {
+  display: none;
 }
 
 .container {
@@ -125,6 +130,29 @@ body {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .banner {
+    padding: 8px 12px;
+  }
+
+  .text {
+    font-size: 11px;
+    letter-spacing: 0.2px;
+  }
+
+  .mobile-break {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 10px;
+    letter-spacing: 0.1px;
   }
 }
 
