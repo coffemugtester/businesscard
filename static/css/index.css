@@ -133,6 +133,8 @@ body {
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
+  overflow-x: auto;
+  padding: 10px 0;
 }
 
 .logos img {
@@ -167,34 +169,12 @@ body {
   .mobile-break {
     display: inline;
   }
-
-  .logos {
-    grid-template-columns: repeat(4, 35px);
-    gap: 15px;
-    margin-top: 30px;
-  }
-
-  .logos img {
-    width: 35px;
-    height: 35px;
-  }
 }
 
 @media (max-width: 480px) {
   .text {
     font-size: 10px;
     letter-spacing: 0.1px;
-  }
-
-  .logos {
-    grid-template-columns: repeat(3, 30px);
-    gap: 12px;
-    margin-top: 25px;
-  }
-
-  .logos img {
-    width: 30px;
-    height: 30px;
   }
 }
 
